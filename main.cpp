@@ -6,13 +6,8 @@ class Company {
 		private:
 			string Company_name;
 			string HQ_Name;
-			// Department department;
-		
-			// Employee employee;
+			
 		public:
-			// string getName();
-			// string setName(string scar);
-			// void displayInfo();
 			
 			void setName(string scar) {
 				this -> Company_name = scar;
@@ -80,8 +75,6 @@ class Department: public Company {
 			int No_of_Department;
 		
 		public:
-			//int getDepNumber();
-			//void setDepNumber(int scar);
 			
 			void setDepNumber(int scar) {
 			 	scar = No_of_Department;
@@ -99,8 +92,6 @@ class Employee: public Company {
 			int No_of_Department;
 		
 		public:
-			// int getEmpNumber();
-			// void setEmpNumber(int scar);
 			
 			void setEmpNumber(int scar) {
 				scar = No_of_Department;
