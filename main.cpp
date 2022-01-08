@@ -7,16 +7,14 @@ class Company {
 			string Company_name;
 			string HQ_Name;
 			
-		public:
-			// set name
 			void setName(string scar) {
 				this -> Company_name = scar;
 			}
-			// get name
+			
 			string getName() {
 				return Company_name;
 			}
-			// adding new company
+
 			void addCompany() {
 		
 				string c_name, hq;
@@ -47,7 +45,7 @@ class Company {
 				cout << "\n\n";
 				
 			}
-			// display
+			
 			void displayInfo() {
 				
 				cout<<"\n***********************"<<endl;
@@ -70,44 +68,44 @@ class Company {
 		
 	};
 	
-class Department: public Company {
+class Department:virtual public Company {
 		private:
 			int No_of_Department;
 		
 		public:
-			// set departmnt number
+			
 			void setDepNumber(int scar) {
 			 	scar = No_of_Department;
 			}
-			// get department number
+			
 			int getDepNumber() {
 			 	return No_of_Department;
 			}
 			
 	};
 	
-class Employee: public Company {
+class Employee:virtual public Company {
 	
 		private:
 			int No_of_Department;
 		
 		public:
-			// set employee number
+			
 			void setEmpNumber(int scar) {
 				scar = No_of_Department;
 			}
-			// get employee number
+	
 			int getEmpNumber() {
 				return this ->No_of_Department;
 			}
 	
 	};
-	 
-int main() {
-	
+
+	main(){
+		
+		Company company;
 		Department department;
 		Employee employee;
-		Company company;
 		
 		return 0;
 		
